@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lab04 - Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <form id="loginForm" class="card" novalidate>
+      <h1>Đăng nhập</h1>
+
+      <label for="username">Username / Email</label>
+      <input id="username" name="username" type="text" autocomplete="username" placeholder="Nhập username hoặc email">
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Nhập mật khẩu">
+
+      <div class="row">
+        <label class="checkbox">
+          <input id="remember" type="checkbox">
+          <span>Remember me</span>
+        </label>
+
+        <div class="buttons">
+          <button id="cancelBtn" type="button" class="btn btn-secondary">Cancel</button>
+          <button id="loginBtn" type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+
+      <div id="error" role="alert" aria-live="polite" class="error"></div>
+      <div id="success" role="status" aria-live="polite" class="success"></div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
