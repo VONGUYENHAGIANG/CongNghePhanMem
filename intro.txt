@@ -1,0 +1,11 @@
+Họ và tên: Võ Nguyễn Hà Giang
+MSSV: N23DCPT074
+Ngành học: Công nghệ đa phương tiện
+Trường: Học Viện Công Nghệ Bưu Chính Viễn Thông
+
+Sở thích: Ngủ 
+Kỹ năng: chưa phát hiện
+Mục tiêu học môn Công nghệ phần mềm:
+- Hiểu rõ quy trình phát triển phần mềm.
+- Thực hành các công cụ Git, GitHub, UML.
+- Hoàn thành Mini Project ATM cuối kỳ.
