@@ -10,7 +10,7 @@ Mô tả các chức năng chính của hệ thống ATM.
 ## 🎯 Sequence Diagram — Quy trình Rút tiền
 Mô tả luồng tương tác giữa Customer, ATM, BankServer và Account khi rút tiền.
 
-![Sequence Diagram](./SQ%20lab03.jpgSQ lab03.jpg)
+![Sequence Diagram](./SQ%20lab03.jpg)
 
 ---
 
