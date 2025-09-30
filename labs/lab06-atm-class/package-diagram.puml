@@ -1,0 +1,28 @@
+@startuml
+package "UI" {
+  [Web UI]
+  [Mobile App]
+}
+
+package "Controller" {
+  [ATM Controller]
+  [Auth Controller]
+}
+
+package "BankService" {
+  [AccountService]
+  [TransactionService]
+}
+
+package "Hardware" {
+  [CardReader]
+  [CashDispenser]
+  [Printer]
+}
+
+' Dependencies between packages (high-level)
+UI --> Controller
+Controller --> BankService
+Controller --> Hardware
+BankService ..> Hardware : "status/monitoring" 
+@enduml
