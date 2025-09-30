@@ -1,37 +1,35 @@
-@startuml
-' Class diagram for ATM (Lab06)
+@startuml class
 class ATM {
-  atmId : int
-  location : String
-  cashLevel : double
-  authenticate(card: Card, pin: String) : boolean
-  withdraw(card: Card, amount: double) : Transaction
-  deposit(card: Card, amount: double) : Transaction
-  transfer(from: Account, to: Account, amount: double) : Transaction
+    atmId : int
+    location : String
+    cashLevel : double
+    authenticate(card: Card, pin: String) : boolean
+    withdraw(card: Card, amount: double) : Transaction
+    deposit(card: Card, amount: double) : Transaction
+    transfer(from: Account, to: Account, amount: double) : Transaction
 }
 
 class Card {
-  cardNo : String
-  pinHash : String
-  status : String
+    cardNo : String
+    pinHash : String
+    status : String
 }
 
 class Account {
-  accountNo : String
-  balance : double
-  debit(amount: double)
-  credit(amount: double)
+    accountNo : String
+    balance : double
+    debit(amount: double)
+    credit(amount: double)
 }
 
 class Transaction {
-  txId : int
-  type : String
-  amount : double
-  time : DateTime
-  status : String
+    txId : int
+    type : String
+    amount : double
+    time : DateTime
+    status : String
 }
 
-' Relationships
 ATM --> Card
 ATM --> Transaction
 Card --> Account
